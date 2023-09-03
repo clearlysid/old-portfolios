@@ -1,0 +1,33 @@
+---
+layout: default
+---
+<header id="home"> 
+    <img class="avatar" src="/assets/avatar.jpg" alt="">
+    <h1>Hello, I'm Sid<span>dharth</span>!</h1>
+    <p>A design student exploring Product, UX and Interaction who loves slick animation and frequently dabbles in code.</p>
+    <p>I’m currently making and breaking stuff at <a href="https://www.headout.com/" style="font-weight: bold;">Headout</a> as an Front-end Intern and meanwhile, also build <a href="/blog/" style="font-weight: bold;">this blog.</a></p>
+</header>
+
+<div class="portfolio">
+    <div class="draggable"></div>
+    <div class="project-list">
+        {% for item in site.portfolio %}
+        <div class="project-item">
+            <div class="project-image" style="background-image:url('{{ item.thumbnail }}'); opacity: 0.9;"></div>
+            <a class="project-link" href="{{ item.url }}">
+                <h2 class="project-item-title" style="background: linear-gradient(0deg, #{{item.color}} 0%, rgba(255,255,255,0) 100%);">{{ item.title }}</h2>
+            </a>
+            <h4 class="project-item-label">{{ item.work }}</h4>
+        </div>
+        {% endfor %}
+
+        <div class="project-item">
+            <div class="project-image" style="background-image:url('/assets/graphic-showcase.jpg'); opacity: 0.9;"></div>
+            <a class="project-link" href="https://www.behance.net/siddharth-jha">
+                <h2 class="project-item-title" style="background: linear-gradient(0deg, #f5ebe6 0%, rgba(255,255,255,0) 100%);">Graphic Design</h2>
+            </a>
+            <h4 class="project-item-label">Print, Packaging and Branding</h4>
+        </div>
+        
+    </div>
+</div>

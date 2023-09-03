@@ -1,0 +1,15 @@
+*.gem
+.bundle
+.sass-cache
+_site
+Gemfile.lock
+_refs
+_design
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+assets/.DS_Store

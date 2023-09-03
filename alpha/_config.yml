@@ -1,0 +1,9 @@
+# Site settings
+title: Siddharth Jha
+email: mail@siddharthjha.com
+description: "Design Student"
+baseurl: "" # the subpath of your site, e.g. /blog/
+url:  "" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown

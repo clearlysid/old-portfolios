@@ -1,0 +1,29 @@
+---
+# This is the SCSS file that will be compiled to the main stylesheet of the site
+---
+
+@import "_fonts" ;
+
+:root {
+    font-size: 18px;
+}
+
+.light {
+    --background-color: #efefef;
+    --primary-color: #000000;
+}
+
+.dark {
+    --background-color: #000000;
+    --primary-color: #ffffff;
+}
+
+$body-font: 'Noah', sans-serif;
+$heading-font: 'FS Kim', 'Helvetica', sans-serif;
+
+@import
+  "_base",
+  "_layouts",
+  "_components",
+  "_animations"
+;

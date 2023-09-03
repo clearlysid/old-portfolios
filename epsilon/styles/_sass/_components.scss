@@ -1,0 +1,497 @@
+#pointer-ring {display: none;}
+
+.social-icons {
+    svg {
+        width: 1.6rem;
+        height: 1.6rem;
+        margin: 1rem;
+        margin-left: 0;
+        opacity: 0.2;
+    }
+}
+
+.back-button {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1rem 2rem;
+    fill: var(--primary-color);
+    svg {width: 2rem;}
+} 
+
+footer {
+    width: 100vw;
+    padding: 0.6rem 0;
+
+    p {
+        text-align: center;
+        font-size: 12px;
+        opacity: 0.4 ;
+    }
+
+}
+
+// Homepage Styles
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    padding-top: 4rem;
+    align-items: center;
+
+    .avatar {
+        height: 8rem;
+        width: 8rem;
+        border-radius: 50%;
+    }
+
+    h1 {
+        margin-top: 1rem;
+        span {display: none;}
+    }
+
+    p {
+        text-align: center;
+        width: 86%;
+    }
+
+    p + p {
+        display: none;
+    }
+}
+
+// Portfolio Styles
+.portfolio {
+    position: relative;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.draggable {
+    height: 24rem;
+    width: 100%;
+    position: absolute;
+}
+
+.project-list {
+    width: -moz-fit-content;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    position: relative;
+    pointer-events: none;
+    will-change: transform;
+}
+
+.project-item {
+    --imgheight: 20rem;
+    height: var(--imgheight);
+    width: calc(var(--imgheight) * 0.7);
+    margin-right: 4rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    will-change: transform;
+    overflow: hidden;
+}
+
+.project-item:first-child {
+    margin-left: 4rem;
+}
+
+.project-item:nth-child(2) {
+    height: calc(var(--imgheight) * 0.8);
+    width: var(--imgheight);
+}
+
+.project-item:last-child {
+    height: calc(var(--imgheight) * 0.9);
+    width: calc(var(--imgheight) * 0.9);
+}
+
+.project-image {
+    width: calc(100% + 2rem);
+    height: calc(100% + 2rem);
+    left: -1rem;
+    top: -1rem;
+    background-size: cover;
+    background-position: 50% 50%;
+    position: absolute;
+}
+
+.project-item-title {
+    -webkit-text-stroke: 0.6px black;
+    color: transparent;
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 1.2rem 1.4rem;
+    bottom: 0;
+    text-align: center;
+    user-select: none;
+    pointer-events: all;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.project-item-label {
+    font-family: 'Noah', sans-serif;
+    position: absolute;
+    bottom: 0.6rem;
+    opacity: 0.2;
+    pointer-events: none;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.project-item-title:hover {
+    color: black;
+    transform: scale(1.05);
+}
+
+// Blog Styles
+
+.blog-home {
+    max-width: 800px;
+    width: 80vw;
+    padding: 8rem 0;
+    margin: 0 auto;
+    
+    .post-list {
+        list-style: none;
+        margin-top: 4rem;
+
+        li {
+            margin: 1rem 0;
+        }
+
+        h2 {
+            display: inline-block;
+            position: relative;
+            transition: all 0.3s ease;
+            transform-origin: left;
+            transform: scale(1);
+        }
+
+        a:hover h2 {
+            transform: scale(1.1);
+        }
+    }   
+}
+
+
+
+
+// Project Styles
+
+.project-header {
+    padding: 2.8rem;
+    padding-top: 4rem;
+
+    .project-background {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 36rem;
+    }
+
+    .project-metadata {
+        display: flex;
+        flex-direction: row;
+        h3 {
+            font-size: 1rem;
+        }
+
+        p {
+            padding: 0;
+            font-size: 0.8rem;
+        }
+    }
+
+    .project-feature {
+        img {
+            width: 80vw;
+            height: auto;
+        }
+    }
+}
+
+
+article {
+    padding: 2rem 0;
+    h1, h2, h3, h4, h5, h6, p, ul {
+        padding-left: 2.8rem;
+        padding-right: 2.8rem;
+    }
+
+    p, li {
+        opacity: 0.8;
+    }
+
+    img {
+        max-width: 100vw;
+        padding: 1rem;
+    }
+}
+
+.post-header {
+    margin: 0 auto;
+    padding: 0 2.8rem;
+    margin-top: 6rem;
+
+    h1 {
+        padding-bottom: 0;
+    }
+}
+
+.iframe-container {
+    overflow: hidden;
+    padding-top: 56.25%;
+    position: relative;
+}
+   
+.iframe-container iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+figcaption {
+    font-size: 0.8rem;
+    text-align: center;
+    opacity: 0.4;
+    margin-bottom: 1rem;
+}
+
+// certain mobile-only queries
+@media screen and (max-width: 800px) {
+    :root { font-size: 4vw; }
+    main {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+}
+
+// Desktop only styles begin here
+@media only screen and (min-width: 800px) {
+    body {
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+
+    #pointer-ring {display: initial;}
+
+    #home {
+        position: absolute;
+        height: 100vh;
+        width: 24rem;
+        align-items: initial;
+        padding: 0;
+        justify-content: center;
+        padding-bottom: 10vh;
+        margin-left: 10rem;
+        z-index: 2;
+        opacity: 1;
+        transition: all 0.4s ease-out;
+    
+        .avatar {
+            height: 12rem;
+            width: 12rem;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+        }
+    
+        p {
+            text-align: initial;
+            width: 100%;
+        }
+    
+        p + p {
+            display: initial;
+        }
+    }
+
+    #home.hide {
+        z-index: 0;
+        transform: translateX(-5rem);
+        opacity: 0;
+    }
+
+    footer {
+        position: absolute;
+        padding: 0;
+        bottom: 0;
+        left: 0;
+        p {font-size: 0.7rem;}
+    }
+
+    .portfolio {
+        position: relative;
+        height: calc(100vh - 2.13rem);
+    }
+    
+    .draggable {
+        height: 24rem;
+        top: calc(50% - 12rem);
+        cursor: grab;
+    }
+    
+    .draggable:active {
+        cursor: grabbing;
+    }
+    
+    .project-list {
+        height: 100vh;
+    }
+
+    .project-item {
+        --imgheight: 30rem;
+    }
+    
+    .project-item:first-child {
+        margin-left: 40rem;
+    }
+
+    .project-header {
+        min-width: 1200px;
+        padding: 5vw 10vw;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        row-gap: 1rem;
+        column-gap: 2rem;
+
+        .project-title {
+            grid-row: 1;
+            grid-column: 1;
+        }
+
+        .project-description {
+            font-size: 1.2rem;
+            grid-column: 1;
+            grid-row: 3;
+            width: 90%;
+        }
+
+        .project-description:nth-of-type(2) {
+            grid-row: 4;
+        }
+
+        .project-metadata {
+            grid-column: 1;
+            grid-row: 5;
+            width: 80%;
+
+            div {
+                margin-right: 2rem;
+            }
+
+            h3 {
+                font-size: 1.2rem;
+            }
+
+            p {
+                padding: 0;
+                font-size: 1rem;
+            }
+        }
+
+        .project-feature {
+            grid-column: 2;
+            grid-row: 2 / span 4;
+
+            img {
+                position: absolute;
+                height: 24rem;
+                width: auto;
+                // max-width: 20rem;
+                margin: 0 auto;
+            }
+        }
+
+    }
+
+
+    article {
+        padding: 2rem 0;
+
+        h1, h2, h3, h4, h5, h6, p, ul {
+            max-width: 740px;
+            padding-right: 0;
+            padding-left: 0;
+            margin: auto;
+        }
+    
+        p, li {
+            opacity: 0.6;
+            font-size: 1.11rem;
+        }
+
+        h2 {
+            margin-top: 2rem;
+        }
+    
+        figure{
+            width: 740px;
+            margin: 0 auto;
+
+            img {
+                object-fit: cover;
+                height: 100%;
+                width: 100%;
+                padding: 0;
+            }
+        }
+    }
+
+    .post-header {
+        max-width: 740px;
+        margin: 0 auto;
+        margin-top: 6rem;
+        padding: 0;
+
+        h1 {
+            padding-bottom: 0;
+        }
+    }
+
+    .blog {
+        figure {
+            max-width: 740px;
+            width: 100%;
+            margin: 2rem auto;
+            overflow: hidden;
+
+            img {
+                object-fit: cover;
+                height: 100%;
+                width: 100%;
+                padding: 0;
+            }
+
+            
+        }
+    }
+
+}
+
+
+

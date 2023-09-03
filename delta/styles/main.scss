@@ -1,0 +1,24 @@
+---
+# This is the SCSS file that will be compiled to the main stylesheet of the site
+---
+
+@import "_fonts" ;
+
+$background-colour: #efefef;
+$primary-colour: black;
+$body-font: 'Noah', 'Helvetica', sans-serif;
+$heading-font: 'Avenir Next', 'Helvetica', sans-serif;
+// $root-font-size: 18px;
+$root-font-size: 1.071vw;
+// $root-font-size: calc(0.77vw + 0.44vh);
+
+body {
+  font-family: $body-font;
+}
+
+@import
+  "_base",
+  "_layouts",
+  "_components",
+  "_animations"
+;

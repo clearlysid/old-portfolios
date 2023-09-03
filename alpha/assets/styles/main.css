@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(-225deg, #FF3CAC 0%, #562B7C 52%, #2B86C5 100%);
+    background-attachment: fixed;
+}
+
+@keyframes floating {
+    from { transform: translate(-50%, -50%); }
+    65%  { transform: translate(-50%, -60%); }
+    to   { transform: translate(-50%, -50%); }    
+}
+
+.hvr {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 6em;
+    text-align: center;
+    line-height: 90%;
+    top: 50%;
+    left: 50%;
+    color: whitesmoke;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+  }
+  .hvr:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr:hover, .hvr:focus, .hvr:active {
+    color:whitesmoke;
+  }
+  .hvr:hover:before, .hvr:focus:before, .hvr:active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+
+
+  span {
+    margin: 0 auto;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .hvr {
+      font-size: 4rem;
+    }
+  }
+
+
+  @media only screen and (max-width: 512px) {
+    .hvr {
+      font-size: 3rem;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    .hvr {
+      font-size: 2rem;
+    }
+  }
+
+  

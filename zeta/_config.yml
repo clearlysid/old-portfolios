@@ -1,0 +1,50 @@
+title: Siddharth Jha | Interaction and Product Designer
+description: A design student exploring Product, UX and Interaction who loves slick animation and frequently dabbles in code.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://www.siddharthjha.com" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Google Analytics
+google-analytics: UA-168083571-1 # add your identifier. For example UA-99631805-1.
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+plugins:
+  - jekyll-sitemap
+  - jekyll/tagging
+
+collections:
+  posts:
+    output: true
+    permalink: /blog/:title/
+
+defaults:
+  - scope:
+      path: '_pages'
+    values:
+      permalink: /:basename:output_ext
+      layout: "page"
+  - scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "post"
+
+include:
+  - _pages
+
+# Tags
+tag_page_dir:         tag
+tag_page_layout:      tag-page
+tag_permalink_style:  pretty
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+
+# Exclude from processing.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor

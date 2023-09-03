@@ -1,0 +1,17 @@
+# Site settings
+title: Siddharth Jha
+email: mail@siddharthjha.com
+description: "A design student focused on UX and Interaction, who loves slick animation and occasionally dabbles in code."
+baseurl: "" # the subpath of your site, e.g. /blog/
+url:  "https://v3.siddharthjha.com" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+
+sass:
+  sass_dir: /styles/_sass
+
+collections:
+  work: 
+    output: true
+    permalink: /work/:path/

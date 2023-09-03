@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="google-site-verification" content="8_xwvhYwJIlZawsmjKqOI7eZz99MY1S9It6iKZ3cMmY" />
+        <title>
+            {% if page.title %}
+                "{{ page.title }}" | Siddharth's Portfolio
+            {% else %}
+                {{ site.title }} | Digital Designer
+            {% endif %}
+        </title>
+        <meta name="description" content="{{ site.description }}">
+        <link rel="stylesheet" href="{{ site.baseurl }}/styles/glide.core.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap">
+        <link rel="stylesheet" href="{{ site.baseurl }}/styles/main.css" id="CSS">
+    </head>
+
+
+<body>
+    <script>
+        document.body.classList.add('fade');
+    </script>
+
+    <nav>
+        <div class="burger"><div class="burger-box"><div class="burger-inner"></div></div></div>
+        <div class="nav-menu">
+            <div class="nav-menu__wrap">
+                <a class="nav-link" href="mailto:mail@siddharthjha.com">Send Email</a>
+                <a class="nav-link" href="https://drive.google.com/file/d/1L5bvyeM8n71tFKDgWVrLvQv_pBSxNlCN/view?usp=sharing">View Resume</a>
+                <div class="nav-link social-icons">
+                    <a href="https://www.instagram.com/clearlysid">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 169.063 169.063"><path d="M122.406 0H46.654C20.929 0 0 20.93 0 46.655v75.752c0 25.726 20.929 46.655 46.654 46.655h75.752c25.727 0 46.656-20.93 46.656-46.655V46.655C169.063 20.93 148.133 0 122.406 0zm31.657 122.407c0 17.455-14.201 31.655-31.656 31.655H46.654C29.2 154.063 15 139.862 15 122.407V46.655C15 29.201 29.2 15 46.654 15h75.752c17.455 0 31.656 14.201 31.656 31.655v75.752z"/><path d="M84.531 40.97c-24.021 0-43.563 19.542-43.563 43.563 0 24.02 19.542 43.561 43.563 43.561s43.563-19.541 43.563-43.561c0-24.021-19.542-43.563-43.563-43.563zm0 72.123c-15.749 0-28.563-12.812-28.563-28.561 0-15.75 12.813-28.563 28.563-28.563s28.563 12.813 28.563 28.563c0 15.749-12.814 28.561-28.563 28.561zM129.921 28.251c-2.89 0-5.729 1.17-7.77 3.22a11.053 11.053 0 00-3.23 7.78c0 2.891 1.18 5.73 3.23 7.78 2.04 2.04 4.88 3.22 7.77 3.22 2.9 0 5.73-1.18 7.78-3.22 2.05-2.05 3.22-4.89 3.22-7.78 0-2.9-1.17-5.74-3.22-7.78-2.04-2.05-4.88-3.22-7.78-3.22z"/></svg>
+                    </a>
+                    <a href="https://www.twitter.com">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 198.737 198.737"><path d="M197.399 42.479a7.502 7.502 0 00-10.438-1.886l-23.288 16.159a7.5 7.5 0 00-3.218 6.487 101 101 0 01.1 4.42c0 47.603-36.222 96.84-96.839 96.84a96.444 96.444 0 01-35.843-6.889l35.939-10.052a7.5 7.5 0 10-4.041-14.445L5.48 148.299a7.5 7.5 0 00-2.027 13.537A111.456 111.456 0 0063.716 179.5c42.057 0 68.398-19.87 83.091-36.538 18.27-20.728 28.748-48.174 28.748-75.302l-.003-.892 19.961-13.85a7.503 7.503 0 001.886-10.439zM16.555 40.14L92.14 78.455a7.494 7.494 0 008.019-.787 7.499 7.499 0 002.677-7.6 29.45 29.45 0 01-.754-6.662c0-16.083 13.087-29.168 29.173-29.168 8.041 0 15.804 3.357 21.296 9.211a7.5 7.5 0 008.031 1.917l23.328-8.476a7.5 7.5 0 10-5.122-14.098l-18.983 6.897c-7.929-6.692-18.083-10.452-28.55-10.452-22.93 0-41.835 17.561-43.972 39.938L23.337 26.761a7.5 7.5 0 10-6.782 13.379zM12.689 85.053l16.608 4.585a7.48 7.48 0 002 .272 7.5 7.5 0 001.992-14.732l-16.608-4.585a7.502 7.502 0 00-3.992 14.46zM27.25 107.376a7.5 7.5 0 00-7.21 7.778 7.5 7.5 0 007.778 7.211l16.562-.628a7.5 7.5 0 007.211-7.779c-.157-4.139-3.648-7.363-7.778-7.21l-16.563.628z"/></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/clearlysid">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 152.216 152.216"><path d="M14.461 35.817a7.5 7.5 0 00-7.5 7.5v101.399a7.5 7.5 0 0015 0V43.317a7.5 7.5 0 00-7.5-7.5zM68.011 115.054a7.5 7.5 0 00-7.5 7.5v22.162a7.5 7.5 0 0015 0v-22.162a7.5 7.5 0 00-7.5-7.5zM102.885 43.89c-10.429 0-19.983 3.794-27.374 10.065V43.317a7.5 7.5 0 00-15 0v42.946a7.5 7.5 0 0015 0c0-15.094 12.28-27.373 27.374-27.373 15.093 0 27.372 12.279 27.372 27.373v58.453a7.5 7.5 0 0015 0V86.263c0-23.365-19.007-42.373-42.372-42.373zM14.459 15c1.97 0 3.91-.8 5.31-2.19a7.578 7.578 0 002.19-5.3c0-1.98-.8-3.91-2.19-5.31a7.612 7.612 0 00-5.31-2.2c-1.97 0-3.9.81-5.3 2.2a7.55 7.55 0 00-2.2 5.31c0 1.97.8 3.9 2.2 5.3a7.578 7.578 0 005.3 2.19z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main id="swup"> 
+    {{ content }}
+    </main>
+
+    <svg class="overlay" viewBox="0 0 100 100" preserveAspectRatio="none"><path class="overlay-path"></path></svg>
+    
+    <div class="loader">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle fill="none" stroke="#000" stroke-width="4" stroke-miterlimit="10" cx="50" cy="50" r="48"/><path fill="none" stroke-linecap="round" stroke="#000" stroke-width="4" stroke-miterlimit="10" d="M50 50l35 .5"><animateTransform attributeName="transform" dur="2s" type="rotate" from="0 50 50" to="360 50 50" repeatCount="indefinite"/></path><path fill="none" stroke-linecap="round" stroke="#000" stroke-width="4" stroke-miterlimit="10" d="M50 50l-.5 24"><animateTransform attributeName="transform" dur="15s" type="rotate" from="0 50 50" to="360 50 50" repeatCount="indefinite"/></path></svg>
+    </div>
+
+    <script src="{{ site.baseurl }}/js/anime.min.js"></script>
+    <script src="{{ site.baseurl }}/js/imagesloaded.pkgd.min.js"></script>
+    <script src="{{ site.baseurl }}/js/swup.min.js"></script>
+    <script src="{{ site.baseurl }}/js/swuppreloadplugin.js"></script>
+    <script src="{{ site.baseurl }}/js/lax.min.js" ></script>
+    <script src="{{ site.baseurl }}/js/glide.min.js"></script>
+    <script src="{{ site.baseurl }}/js/app.js"></script>
+
+</body>
+</html>

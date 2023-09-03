@@ -1,0 +1,33 @@
+# Site settings
+title: Siddharth Jha
+email: mail@siddharthjha.com
+description: "A design student exploring Product, UX and Interaction who loves slick animation and frequently dabbles in code."
+baseurl: "" # the subpath of your site, e.g. /blog/
+url:  "https://v4.siddharthjha.com" # the base hostname & protocol for your site
+markdown: kramdown
+
+sass:
+  sass_dir: /styles/_sass
+  style: compressed # for minifying css
+
+collections:
+  posts:
+    output: true
+    permalink: /blog/:title/
+  portfolio: 
+    output: true
+    permalink: /projects/:title/
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "post"
+  -
+    scope:
+      path: ""
+      type: "portfolio" # previously `page` in Jekyll 2.2.
+    values:
+      layout: "project"

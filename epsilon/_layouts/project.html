@@ -1,0 +1,44 @@
+---
+layout: default
+---
+<header style="background-color:#{{ page.color }}">
+    <div class="project-header">
+        <h1 class="project-title">{{ page.title }}</h1>
+        {% for item in page.description %}
+        <p class="project-description">{{ item }}</p>
+        {% endfor %}
+        <div class="project-metadata">
+            {% for item in page.metadata %}
+            <div style="padding-right: 2rem;">
+                <h3>{{ item.name }}</h3>
+                {% for item in item.items %}
+                <p>{{ item }}</p>
+                {% endfor %}
+            </div>
+            {% endfor %}
+        </div>
+        <div class="project-feature">{{ page.feature }}</div>
+    </div>
+</header>
+
+<a href="{{ site.baseurl }}/" class="back-button">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path d="M492 236H68.442l70.164-69.824c7.829-7.792 7.859-20.455.067-28.284-7.792-7.83-20.456-7.859-28.285-.068l-104.504 104-.018.019c-7.809 7.792-7.834 20.496-.002 28.314l.018.019 104.504 104c7.828 7.79 20.492 7.763 28.285-.068 7.792-7.829 7.762-20.492-.067-28.284L68.442 276H492c11.046 0 20-8.954 20-20s-8.954-20-20-20z"/>
+    </svg>
+</a>
+
+<article class="{{ page.name }}">
+    {{ content }}
+</article>
+
+
+<!-- previous and next buttons! -->
+<!-- <div style="margin-bottom: 4rem;">
+    {% if page.previous.url %}
+    <a href="{{page.previous.url}}"><h3>{{page.previous.title}}</h3></a>
+    {% endif %}
+    {% if page.next.url %}
+    <a href="{{page.next.url}}"><h3>{{page.next.title}}</h3></a>
+    {% endif %}
+</div> -->
+
